@@ -6,7 +6,7 @@
 Usage = "Usage: style_cmp.sh [ <directory of file to create profile off of> | <directory of file to analyze> <directory of profile> ]"
 
 #toggles based on existancr of second paramters
-profilemode=1
+profilemode = 1
 
 #checks of inouts to ensure existance of inputs
 if [[ -z "$1" ]]; then
@@ -19,7 +19,7 @@ then
   echo $Usage
   exit 1
 elif [[ -z "$2" ]]; then
-  $profilemode=0
+  $profilemode = 0
   if [[ ! -f $2 ]]; then
     1>&2 echo "Could not find specified file $2"
     echo $Usage
